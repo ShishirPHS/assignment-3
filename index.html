@@ -60,9 +60,9 @@
   </head>
   <body>
     <header class="container mx-auto">
-      <nav class="px-5 sm:px-0 lg:px-0 my-14">
+      <nav class="px-5 sm:px-0 lg:px-0 mt-11 mb-6 lg:my-14">
         <div
-          class="navbar justify-between bg-red-300 lg:bg-[#F85559] rounded-[600px] lg:px-14 py-7"
+          class="lg:flex justify-between bg-white lg:bg-[#F85559] lg:rounded-[600px] lg:px-14 lg:py-7"
         >
           <!-- large device menu -->
           <div class="hidden lg:flex">
@@ -75,10 +75,11 @@
               <li><a>All Fruits</a></li>
             </ul>
           </div>
-          <div>
+          <div class="flex justify-between items-center">
+            <!-- icon and logo -->
             <div class="flex">
               <img
-                class="max-h-8 lg:max-h-[60px] mr-4"
+                class="max-h-8 lg:max-h-[60px] mr-2 lg:mr-4"
                 src="./images/logo.png"
                 alt="navbar logo"
               />
@@ -87,6 +88,7 @@
                 >Fruit Burst</a
               >
             </div>
+            <!-- dropdown for small device -->
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
                 <i class="fa-solid fa-bars"></i>
@@ -112,12 +114,12 @@
               </ul>
             </div>
           </div>
-
+          <!-- large device search -->
           <div class="hidden lg:block">
             <input
               type="search"
               placeholder="Search here"
-              class="py-4 px-7 rounded-[50px] lg:w-[400px]"
+              class="py-4 px-7 rounded-[50px] max-w-[400px]"
               name=""
               id=""
             />
