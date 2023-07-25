@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Fruit Shop</title>
 
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/logo.png" />
+
+    <!-- font awesome link start -->
+    <script
+      src="https://kit.fontawesome.com/577d58cb57.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome link end -->
+
+    <!-- google font lato & open sans link start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-family: 'Lato', sans-serif; -->
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <!-- google font lato link end -->
+
     <!-- tailwind css and daisy ui link start -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
@@ -13,8 +34,97 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- tailwind css and daisy ui link end -->
+
+    <!-- custom tailwind -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-color": "#121212",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- styles -->
+    <style>
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
+      .font-open-sans {
+        font-family: "Open Sans", sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <header class="container mx-auto"></header>
+    <header class="container mx-auto">
+      <nav class="px-5 sm:px-0 lg:px-0 my-14">
+        <div
+          class="navbar justify-between bg-red-300 lg:bg-[#F85559] rounded-[600px] lg:px-14 py-7"
+        >
+          <!-- large device menu -->
+          <div class="hidden lg:flex">
+            <ul
+              class="menu menu-horizontal px-1 text-white font-open-sans font-medium"
+            >
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="flex">
+              <img
+                class="max-h-8 lg:max-h-[60px] mr-4"
+                src="./images/logo.png"
+                alt="navbar logo"
+              />
+              <a
+                class="text-primary-color lg:text-white font-bold text-xl lg:text-5xl font-lato"
+                >Fruit Burst</a
+              >
+            </div>
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+                <li>
+                  <input
+                    type="search"
+                    placeholder="Search here"
+                    class="py-4 px-7 rounded-[50px]"
+                    name=""
+                    id=""
+                  />
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="hidden lg:block">
+            <input
+              type="search"
+              placeholder="Search here"
+              class="py-4 px-7 rounded-[50px] lg:w-[400px]"
+              name=""
+              id=""
+            />
+            <i class="fa-solid fa-magnifying-glass lg:-ml-12"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
   </body>
 </html>
