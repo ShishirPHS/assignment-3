@@ -460,20 +460,74 @@
             </h4>
             <div class="lg:w-[215px] w-[244px] h-[2px] bg-[#1212121a]"></div>
             <p class="text-[#12121299] font-open-sans font-medium my-6">
-              Apples
+              Apple
             </p>
             <!-- stars -->
             <div class="space-x-2">
-              <i class="fa-solid fa-star text-[#F85559]"></i>
-              <i class="fa-solid fa-star-half-stroke text-[#F85559]"></i>
-              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
-              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
-              <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+              <i class="fa-solid fa-star text-[#F85559] text-2xl"></i>
+              <i
+                class="fa-solid fa-star-half-stroke text-[#F85559] text-2xl"
+              ></i>
+              <i class="fa-solid fa-star text-[#FBC0A8] text-2xl"></i>
+              <i class="fa-solid fa-star text-[#FBC0A8] text-2xl"></i>
+              <i class="fa-solid fa-star text-[#FBC0A8] text-2xl"></i>
             </div>
-
-            <a class="text-[#F85559] font-lato text-lg font-bold mt-8" href=""
-              >Details</a
+            <!-- btn for modal -->
+            <button
+              class="text-[#F85559] font-lato text-lg font-bold mt-8"
+              onclick="modal_one.showModal()"
             >
+              Details
+            </button>
+            <!-- modal start -->
+            <dialog id="modal_one" class="modal">
+              <form method="dialog" class="modal-box py-8 px-0">
+                <div class="flex flex-col items-center justify-center">
+                  <img
+                    class="max-w-[290px] max-h-[355px]"
+                    src="./images/apple.png"
+                    alt="apple.png"
+                  />
+                  <h3
+                    class="font-bold text-2xl font-lato text-primary-font-color my-2"
+                  >
+                    Apple
+                  </h3>
+                  <p
+                    class="mb-2 text-center text-sm text-[#12121299] max-w-[300px]"
+                  >
+                    Fresh and crisp, our handpicked apples are a delightful
+                    treat for your taste buds.
+                  </p>
+                  <!-- rating -->
+                  <div>
+                    <div class="space-x-2">
+                      <i class="fa-solid fa-star text-[#F85559] text-lg"></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke text-[#F85559] text-lg"
+                      ></i>
+                      <i class="fa-solid fa-star text-[#FBC0A8] text-lg"></i>
+                      <i class="fa-solid fa-star text-[#FBC0A8] text-lg"></i>
+                      <i class="fa-solid fa-star text-[#FBC0A8] text-lg"></i>
+                    </div>
+                  </div>
+                  <div class="modal-action space-x-8 mt-5">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button
+                      class="btn normal-case text-[#F85559] h-auto font-lato font-bold bg-white border-1 border-[#F85559] hover:bg-white hover:border-1 hover:border-[#F85559] px-8 pt-[20px] pb-[20px] items-center"
+                    >
+                      Close
+                    </button>
+                    <button
+                      class="btn normal-case text-white h-auto font-lato font-bold bg-[#F85559] px-8 pt-[20px] pb-[20px] items-center border-1 border-[#F85559] hover:border-1 hover:border-[#F85559] hover:bg-[#F85559]"
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </dialog>
+            <!-- modal end -->
           </div>
           <!-- second card -->
           <div
@@ -498,9 +552,62 @@
               <i class="fa-solid fa-star text-[#FBC0A8]"></i>
             </div>
 
-            <a class="text-[#F85559] font-lato text-lg font-bold mt-8" href=""
-              >Details</a
+            <!-- btn for modal -->
+            <button
+              class="text-[#F85559] font-lato text-lg font-bold mt-8"
+              onclick="modal_two.showModal()"
             >
+              Details
+            </button>
+            <!-- modal start -->
+            <dialog id="modal_two" class="modal">
+              <form method="dialog" class="modal-box py-8 px-0">
+                <div class="flex flex-col items-center justify-center">
+                  <img
+                    class="max-w-[290px] max-h-[355px]"
+                    src="./images/orange.png"
+                    alt="orange.png"
+                  />
+                  <h3
+                    class="font-bold text-2xl font-lato text-primary-font-color my-2"
+                  >
+                    Orange
+                  </h3>
+                  <p
+                    class="mb-2 text-center text-sm text-[#12121299] max-w-[300px]"
+                  >
+                    Fresh and juicy, our handpicked oranges are a delightful
+                    treat for your taste buds.
+                  </p>
+                  <!-- rating -->
+                  <div>
+                    <div class="space-x-2">
+                      <i class="fa-solid fa-star text-[#F85559] text-lg"></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke text-[#F85559] text-lg"
+                      ></i>
+                      <i class="fa-solid fa-star text-[#FBC0A8] text-lg"></i>
+                      <i class="fa-solid fa-star text-[#FBC0A8] text-lg"></i>
+                      <i class="fa-solid fa-star text-[#FBC0A8] text-lg"></i>
+                    </div>
+                  </div>
+                  <div class="modal-action space-x-8 mt-5">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button
+                      class="btn normal-case text-[#F85559] h-auto font-lato font-bold bg-white border-1 border-[#F85559] hover:bg-white hover:border-1 hover:border-[#F85559] px-8 pt-[20px] pb-[20px] items-center"
+                    >
+                      Close
+                    </button>
+                    <button
+                      class="btn normal-case text-white h-auto font-lato font-bold bg-[#F85559] px-8 pt-[20px] pb-[20px] items-center border-1 border-[#F85559] hover:border-1 hover:border-[#F85559] hover:bg-[#F85559]"
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </dialog>
+            <!-- modal end -->
           </div>
           <!-- third card -->
           <div
@@ -525,9 +632,62 @@
               <i class="fa-solid fa-star text-[#FBC0A8]"></i>
             </div>
 
-            <a class="text-[#F85559] font-lato text-lg font-bold mt-8" href=""
-              >Details</a
+            <!-- btn for modal -->
+            <button
+              class="text-[#F85559] font-lato text-lg font-bold mt-8"
+              onclick="modal_three.showModal()"
             >
+              Details
+            </button>
+            <!-- modal start -->
+            <dialog id="modal_three" class="modal">
+              <form method="dialog" class="modal-box py-8 px-0">
+                <div class="flex flex-col items-center justify-center">
+                  <img
+                    class="max-w-[290px] max-h-[355px]"
+                    src="./images/dragon.png"
+                    alt="dragon.png"
+                  />
+                  <h3
+                    class="font-bold text-2xl font-lato text-primary-font-color my-2"
+                  >
+                    Red Dragon
+                  </h3>
+                  <p
+                    class="mb-2 text-center text-sm text-[#12121299] max-w-[300px]"
+                  >
+                    Fresh and juicy, our handpicked dragons are a delightful
+                    treat for your taste buds.
+                  </p>
+                  <!-- rating -->
+                  <div>
+                    <div class="space-x-2">
+                      <i class="fa-solid fa-star text-[#F85559] text-lg"></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke text-[#F85559] text-lg"
+                      ></i>
+                      <i class="fa-solid fa-star text-[#FBC0A8] text-lg"></i>
+                      <i class="fa-solid fa-star text-[#FBC0A8] text-lg"></i>
+                      <i class="fa-solid fa-star text-[#FBC0A8] text-lg"></i>
+                    </div>
+                  </div>
+                  <div class="modal-action space-x-8 mt-5">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button
+                      class="btn normal-case text-[#F85559] h-auto font-lato font-bold bg-white border-1 border-[#F85559] hover:bg-white hover:border-1 hover:border-[#F85559] px-8 pt-[20px] pb-[20px] items-center"
+                    >
+                      Close
+                    </button>
+                    <button
+                      class="btn normal-case text-white h-auto font-lato font-bold bg-[#F85559] px-8 pt-[20px] pb-[20px] items-center border-1 border-[#F85559] hover:border-1 hover:border-[#F85559] hover:bg-[#F85559]"
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </dialog>
+            <!-- modal end -->
           </div>
           <!-- fourth card -->
           <div
@@ -552,9 +712,62 @@
               <i class="fa-solid fa-star text-[#FBC0A8]"></i>
             </div>
 
-            <a class="text-[#F85559] font-lato text-lg font-bold mt-8" href=""
-              >Details</a
+            <!-- btn for modal -->
+            <button
+              class="text-[#F85559] font-lato text-lg font-bold mt-8"
+              onclick="modal_four.showModal()"
             >
+              Details
+            </button>
+            <!-- modal start -->
+            <dialog id="modal_four" class="modal">
+              <form method="dialog" class="modal-box py-8 px-0">
+                <div class="flex flex-col items-center justify-center">
+                  <img
+                    class="max-w-[290px] max-h-[355px]"
+                    src="./images/banana.png"
+                    alt="banana.png"
+                  />
+                  <h3
+                    class="font-bold text-2xl font-lato text-primary-font-color my-2"
+                  >
+                    Banana
+                  </h3>
+                  <p
+                    class="mb-2 text-center text-sm text-[#12121299] max-w-[300px]"
+                  >
+                    Our premium bananas are nature's perfect snack – sweet,
+                    creamy, and loaded with essential nutrients.
+                  </p>
+                  <!-- rating -->
+                  <div>
+                    <div class="space-x-2">
+                      <i class="fa-solid fa-star text-[#F85559] text-lg"></i>
+                      <i
+                        class="fa-solid fa-star-half-stroke text-[#F85559] text-lg"
+                      ></i>
+                      <i class="fa-solid fa-star text-[#FBC0A8] text-lg"></i>
+                      <i class="fa-solid fa-star text-[#FBC0A8] text-lg"></i>
+                      <i class="fa-solid fa-star text-[#FBC0A8] text-lg"></i>
+                    </div>
+                  </div>
+                  <div class="modal-action space-x-8 mt-5">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button
+                      class="btn normal-case text-[#F85559] h-auto font-lato font-bold bg-white border-1 border-[#F85559] hover:bg-white hover:border-1 hover:border-[#F85559] px-8 pt-[20px] pb-[20px] items-center"
+                    >
+                      Close
+                    </button>
+                    <button
+                      class="btn normal-case text-white h-auto font-lato font-bold bg-[#F85559] px-8 pt-[20px] pb-[20px] items-center border-1 border-[#F85559] hover:border-1 hover:border-[#F85559] hover:bg-[#F85559]"
+                    >
+                      Buy Now
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </dialog>
+            <!-- modal end -->
           </div>
         </div>
         <div class="flex justify-center">
@@ -694,6 +907,7 @@
         </div>
       </section>
       <!-- meat the team section end -->
+      
     </main>
 
     <!-- footer section start -->
